@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Draw</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./dist/css/main.min.css" type="text/css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          <ul>
+            <li id="trackX"></li>
+            <li id="trackY"></li>
+          </ul>
+        </nav>
+        <main></main>
+      </div>
+
+        
+        <script> 
+        
+
+ 
+   var mWidth = document.querySelector('main').offsetWidth,
+   mHeight = document.querySelector('main').offsetHeight,
+
+   //Create the canvas
+   canvas = document.createElement("canvas");
+   canvas.height = mHeight;
+   canvas.width = mWidth;
+   document.querySelector('main').appendChild(canvas);
+
+
+   //Create the context
+   var ctx = canvas.getContext("2d");
+
+
+
+
+ctx.beginPath();
+ctx.arc(200, 400, 83, 0, 2 * Math.PI);
+ctx.strokeStyle = "red";
+ctx.lineWidth = 20;
+ctx.stroke();
+
+ctx.fillStyle = "blue" ;
+ctx.fill();
+
+var $timer = setInterval
+()=>{
+
+  circle(x, y, r++. ctx);
+
+  if(r>=166){
+    clear
+  }
+}
+  
+
+        </script>
+</body>
+</html>
